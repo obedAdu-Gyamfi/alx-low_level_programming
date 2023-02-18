@@ -2,7 +2,6 @@
 #include<ctype.h>
 /**
  * main - Entry point
- *
  * Description: This program prints the alphabets in lowercase, followed
  * Return: Always 0 (success)
  */
