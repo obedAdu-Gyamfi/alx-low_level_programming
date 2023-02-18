@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-for (int alphabet_ = 'a'; alphabet_ <= 'z'; alphabet_++)
+for (int al = 'a'; al <= 'z'; al++)
 {
-alphabet_ = tolower(alphabet_);
-putchar(alphabet_);
+al = tolower(al);
+putchar(al);
 }
 putchar('\n');
 return (0);
