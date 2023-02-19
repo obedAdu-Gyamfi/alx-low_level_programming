@@ -8,7 +8,8 @@
  */
 int main(void)
 {
-for (int my_val = 'a'; my_val <= 'z'; my_val++)
+int my_val;
+for (my_val = 'a'; my_val <= 'z'; my_val++)
 {
 my_val = tolower(my_val);
 putchar(my_val);
