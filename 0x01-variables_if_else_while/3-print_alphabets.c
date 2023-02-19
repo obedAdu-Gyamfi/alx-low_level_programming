@@ -9,12 +9,13 @@
 int main(void)
 {
 int my_val;
+int my;
 for (my_val = 'a'; my_val <= 'z'; my_val++)
 {
 my_val = tolower(my_val);
 putchar(my_val);
 }
-for (int my = 'A'; my <= 'Z'; my++)
+for (my = 'A'; my <= 'Z'; my++)
 {
 putchar(my);
 }
