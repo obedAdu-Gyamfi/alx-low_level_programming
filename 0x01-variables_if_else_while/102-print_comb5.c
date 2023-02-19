@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
@@ -11,11 +9,8 @@
  */
 int main(void)
 {
-	int n, n2, n3;
+	int n2, n3;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	for (n2 = 0; n2 <= 98; n2++)
 	{
 		for (n3 = n2 + 1; n3 <= 99; n3++)
