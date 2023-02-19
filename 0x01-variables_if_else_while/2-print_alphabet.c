@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-int al = 'a';
-for (al <= 'z'; al++;)
+int al;
+for (al = 'a'; al <= 'z'; al++)
 {
 al = tolower(al);
 putchar(al);
