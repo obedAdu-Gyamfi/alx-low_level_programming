@@ -21,7 +21,7 @@ int main(void)
 			putchar((n3 / 10) + '0');
 			putchar((n3 % 10) + '0');
 
-			if ((n2 == 98) || (n3 == 99))
+			if ((n2 == 98) && (n3 == 99))
 				continue;
 
 			putchar(',');
