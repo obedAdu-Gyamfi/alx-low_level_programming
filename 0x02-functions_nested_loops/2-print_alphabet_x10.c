@@ -8,7 +8,7 @@
  * Return: Always 0 on success
  *
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	char al;
 	int num;
@@ -21,5 +21,4 @@ int main(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
