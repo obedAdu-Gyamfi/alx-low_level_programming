@@ -12,7 +12,7 @@ int main(void)
 	char var[] = "_putchar\n";
 	int my_var = 0;
 
-	while (var[my_var] != '\n')
+	while (var[my_var] != '\0')
 	{
 		char c = var[my_var];
 
@@ -20,6 +20,5 @@ int main(void)
 
 		my_var++;
 	}
-	putchar('\n');
 	return (0);
 }
