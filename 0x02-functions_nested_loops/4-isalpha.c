@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * main - Checks code
+ * _isalpha - Checks code
+ * @c: it's a parameter
  *
  * Return: Always 0 on success
  */

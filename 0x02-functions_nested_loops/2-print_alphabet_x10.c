@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet_x10 - Entry point
  *
  * Description: This program writes all the lowercase alpabets
  * using ony _putchar twice.
