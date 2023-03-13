@@ -1,37 +1,29 @@
 #include "main.h"
-#include <stddef.h>
-
+#include <string.h>
 /**
  * _strncat - Entry point.
  *
  * Description: This function concatenates two strings
  * with maximum n bytes from s2.
  *
- * @s1: first string.
- * @s2: second string.
+ * @dest: first string.
+ * @src: second string.
  * @n: length to stop at.
  *
- * Return: void
+ * Return: char
  *
  */
-char *_strncat(char *s1, char *s2, int n)
+char *_strncat(char *dest, char *src, int n)
 {
+	int dest_len = strlen(dest);
 	int i;
-	char *concat = s1;
 
-	if ((s1 == NULL) && (s2 == NULL))
-		return (NULL);
-	while (*concat != '\0')
-		concat++;
-	while (*s2 != '\0')
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		i++;
-		if (i > n)
-			break;
-		*concat++ = *s2++;
+		dest[dest_len + i] = src[i];
 	}
 
-	*concat = '\0';
+	dest[dest_len + i] = '\0';
 
-	return (s1);
+	return (dest);
 }
