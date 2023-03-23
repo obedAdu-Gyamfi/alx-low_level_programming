@@ -7,11 +7,12 @@
  * main - Program to perform simple operations
  * @argc: argument count
  * @argv: array of arguments
- * Return: exits o normally, 98 on argc error, 99 on illegal operator
+ * Return: exits o normally, 98 on argc error
+ * 99 on illegal operator
  */
 int main(int argc, char *argv[])
 {
-	int(*func)(int,int);
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
