@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- * _Puts_recursion - Entry point.
- * 
+ * _puts_recursion - Entry point.
  * Description: This is a recursive function
  * that prints a string followed by a new line.
  *
@@ -21,7 +20,8 @@ void _puts_recursion(char *s)
 		s++;
 		_puts_recursion(s);
 	}
-	else{
+	else
+	{
 		_putchar('\n');
 	}
 }
