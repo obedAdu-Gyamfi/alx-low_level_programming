@@ -11,7 +11,6 @@
  * to the program.
  * @argv: This is a pointer array that points to that arguments that are
  * passed to the program.
- *
  * Return: Always 0 on success.
  *
  */
