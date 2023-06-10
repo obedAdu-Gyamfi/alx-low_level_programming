@@ -27,13 +27,20 @@ int main(int argc, char *argv[])
 	}
 	if (argc > 1)
 	{
-		add = atoi(argv[1]);
+		add = atoi(argv[0]);
 
-		for (i = 2; i < argc ; i++)
+		for (i = 1; i < argc ; i++)
 		{
-			add += atoi(argv[i]);
+			if ((*argv[i] >= '0') & (*argv[i] <= '9'))
+			{
+				add += atoi(argv[i]);
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-
 		printf("%d\n", add);
 	}
 
