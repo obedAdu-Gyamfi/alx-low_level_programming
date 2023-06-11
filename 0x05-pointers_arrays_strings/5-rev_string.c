@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- *
- * rev_string - Entry point.
+ * rev_string - Entry point
  *
  * Description: This function reverses a string.
  *
@@ -22,9 +21,9 @@ void rev_string(char *s)
 	{
 		len++;
 	}
-
 	len = len - 1;
-	while (len != - 1 )
+
+	while (len != -1)
 	{
 		_putchar(s[len--]);
 	}
