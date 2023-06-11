@@ -16,16 +16,18 @@
 void rev_string(char *s)
 {
 	int len = 0;
+	int i;
+	char out;
 
 	while (s[len] != '\0')
 	{
 		len++;
 	}
-	len = len - 1;
 
-	while (len != -1)
+	for (i = 0; i < len / 2;i++)
 	{
-		_putchar(s[len--]);
+		out = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = out;
 	}
-	_putchar('\n');
 }
