@@ -10,7 +10,6 @@
  * @n: length to stop at.
  *
  * Return: char
- *
  */
 char *_strncat(char *dest, char *src, int n)
 {
