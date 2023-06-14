@@ -17,13 +17,12 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		printf("failed to allocate memory\n");
+		fprintf(stderr, "failed to allocate memory\n");
 		return (NULL);
 	}
 	if (dup == NULL)
 		return (NULL);
 	memcpy(dup, str, len);
 
-	return (str);
 	return (dup);
 }
