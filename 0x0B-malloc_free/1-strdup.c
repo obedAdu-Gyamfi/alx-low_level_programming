@@ -16,9 +16,14 @@ char *_strdup(char *str)
 	char *dup = malloc(len * sizeof(char));
 
 	if (str == NULL)
+	{
+		printf("failed to allocate memory\n");
 		return (NULL);
+	}
 	if (dup == NULL)
 		return (NULL);
 	memcpy(dup, str, len);
+
+	return (str);
 	return (dup);
 }
