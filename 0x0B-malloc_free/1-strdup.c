@@ -6,23 +6,27 @@
 /**
  * _strdup - Entry point
  *
+ * Description: This function returns a pointer to newly
+ * allocated space memory, which contains a copy of the string
+ * given as a parameter.
  * @str: Parameter
  *
  * Return: void.
  */
 char *_strdup(char *str)
 {
-	size_t len = strlen(str) + 1;
-	char *dup = malloc(len * sizeof(char));
-
+	size_t len;
+	char *dup;
 	if (str == NULL)
-	{
-		fprintf(stderr, "failed to allocate memory\n");
-		return (NULL);
-	}
+        {
+                return (NULL);
+        }
+
+	len = strlen(str) + 1;
+	dup = malloc(len * sizeof(char));
+
 	if (dup == NULL)
 		return (NULL);
 	memcpy(dup, str, len);
-
 	return (dup);
 }
