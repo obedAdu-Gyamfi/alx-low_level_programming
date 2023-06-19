@@ -3,16 +3,23 @@
 
 /**
  * struct dog - Short description
+ * @d: dog d
  * @name: Name
  * @age: age
  * @owner: Owner
  *
  * Description: This is a struct on structs.
  */
-struct dog
+
+typedef struct dog
 {
+	char *d;
 	char *name;
 	float age;
 	char *owner;
-};
+} dog;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
+/*typedef struct dog dog;*/
 #endif
