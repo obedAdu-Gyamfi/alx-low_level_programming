@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	func_ptr = (unsigned char *) (int main(int argc, char *argv[]));
+	func_ptr = unsigned char * int (main)(int argc, char *argv[]);
 
 	i = 0;
 	if (bytes > 0)
