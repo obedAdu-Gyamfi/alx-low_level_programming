@@ -4,6 +4,25 @@
 #include <string.h>
 
 /**
+ * _strlen - Entrypoint
+ * Description: returns the length of a string.
+ *
+ * @s: string
+ * Return: len.
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (len[s] != 0)
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
  * add_node - Entry point.
  *
  * Description: Function adds a new node
