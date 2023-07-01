@@ -6,7 +6,7 @@ section .text
 main:
 	push rbp
 	
-	mov rdi,fmt
+	mov rdi, fmt
 	mov rsi,msg
 	mov rax, 0
 	call printf
@@ -19,7 +19,7 @@ main:
 	ret
 
 section .data
-	msg db "Hello, Horberton", 0 ; new line or 10.
+	msg db "Hello, Holberton",0
 	fmt: db "%s", 0xa, 0
 
 
