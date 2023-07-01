@@ -1,12 +1,8 @@
-/*
-This is an assembly language program that prints
-hello hoberton
-*/
-exterm printf
-
+extern printf
 
 section .text
 	global main
+
 main:
 	push rbp
 	
@@ -17,6 +13,7 @@ main:
 
 
 	pop rbp
+
 
 	mov rax,0
 	ret
