@@ -18,7 +18,8 @@ void free_listint2(listint_t **head)
 
 	if (head == NULL)
 	{
-		printf("(nil)\n");
+		/*printf("(nil)\n");*/
+		return;
 	}
 	while (*head)
 	{
