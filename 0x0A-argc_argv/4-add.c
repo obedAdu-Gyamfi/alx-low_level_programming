@@ -1,46 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
- * main - Entry point
+ * main - Prints the sum of numbers
  *
- * Description: This function is a command line argument that
- * takes two arguments and add them.
+ * @argc: number of command line arguments.
+ * @argv: array of commands
  *
- * @argc: This refers to the number of arguments that is passed
- * to the program.
- * @argv: This is a pointer array that points to that arguments that are
- * passed to the program.
  * Return: Always 0 on success.
- *
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int add;
+	int p,k;
 	int i;
+	int sum = 0;
+	char *ptr;
 
-	if (argc <= 1)
+	if (argc == 1)
 	{
 		printf("%d\n", 0);
 	}
-	if (argc > 1)
+	else
 	{
-		add = atoi(argv[0]);
-
-		for (i = 1; i < argc ; i++)
+		for (p = 1; p < argc; p++)
 		{
-			if ((*argv[i] >= '0') & (*argv[i] <= '9'))
+			ptr = argv[p];
+			i = strlen(ptr);
+
+			for (k = 0; k < i; k++)
 			{
-				add += atoi(argv[i]);
+				if (isdigit(*(ptr + k)) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+
+			sum += atoi(argv[i]);
 		}
-		printf("%d\n", add);
+		printf("%d\n",sum);
 	}
 
 	return (0);
