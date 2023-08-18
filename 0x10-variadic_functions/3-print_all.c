@@ -32,12 +32,11 @@ void print_all(const char *format, ...)
 			printf("%s %d", seperator, va_arg(arg_list, int));
 			break;
 		case 'c':
-			_putchar(va_arg(arg_list, int));
+			putchar(va_arg(arg_list, int));
 			printf("%s", seperator);
 			break;
 		case 'f':
 			printf("%s %f", seperator, va_arg(arg_list, double));
-			/*printf("%s",seperator);*/
 			break;
 		case  's':
 			if (c != NULL)
