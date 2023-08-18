@@ -36,11 +36,6 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 			}
 
 		}
-		else
-		{
-			return (NULL);
-		}
-
 	}
 	va_end(arg);
 	printf("\n");
