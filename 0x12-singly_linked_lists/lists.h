@@ -1,5 +1,6 @@
 #ifndef LINKED_LIST
 #define LINKED_LIST
+#include <stddef.h>
 /**
  * struct list_s - a struct type.
  * @str: str
