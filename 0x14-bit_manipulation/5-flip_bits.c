@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	if (xclusiveOR > 0)
 	{
-		bit = bit + xclusiveOR & 1;
+		bit += xclusiveOR & 1;
 		xclusiveOR >>= 1;
 	}
 	return (bit);
