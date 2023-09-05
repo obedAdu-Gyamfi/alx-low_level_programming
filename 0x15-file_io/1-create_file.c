@@ -42,7 +42,7 @@ int create_file(const char *filename, char *text_content)
 		i = _strlen(text_content);
 	}
 
-	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC | 0600);
+	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	n_write = write(fp, text_content, i);
 
 	if (fp == -1 || n_write == -1)
