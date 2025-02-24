@@ -1,4 +1,6 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <unistd.h>
+
 /**
  * main - Entry point
  *
@@ -6,8 +8,9 @@
  */
 int main(void)
 {
-	char my_var[] = "and that piece of art is useful\" - Dora Korpar, 2o15-10-19\n"
+	char var[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	unsigned int buff = 59;
 
-	write(1, my_var, 59);
+	write(1, var, buff);
 	return (1);
 }
