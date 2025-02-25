@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - Every block of code resides in this function.
  *
@@ -7,11 +7,12 @@
  */
 int main(void)
 {
-int num;
-for (num = '0'; num <= '9'; num++)
-{
-putchar(num);
-}
-putchar('\n');
-return (0);
+	int num;
+
+	for (num = '0'; num <= '9'; num++)
+	{
+		putchar(num);
+	}
+	putchar('\n');
+	return (0);
 }
