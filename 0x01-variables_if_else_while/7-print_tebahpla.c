@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -8,11 +9,12 @@
  */
 int main(void)
 {
-int alpha;
-for (alpha = 'z'; alpha >= 'a'; alpha--)
-{
-putchar(alpha);
-}
-putchar('\n');
-return (0);
+	int i;
+
+	for (i = 122; i >= 97; i--)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+	return (0);
 }
