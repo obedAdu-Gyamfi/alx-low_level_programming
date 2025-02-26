@@ -20,7 +20,7 @@ int main(void)
 	{
 		putchar(dec);
 	}
-	for (alpha = 'A'; alpha <= 'F'; alpha++)
+	for (alpha = 'a'; alpha <= 'f'; alpha++)
 	{
 	putchar(alpha);
 	}
