@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * main - Entry point.
  *
@@ -8,16 +10,7 @@
  */
 int main(void)
 {
-	char var[] = "_putchar\n";
-	int my_var = 0;
 
-	while (var[my_var] != '\0')
-	{
-		char c = var[my_var];
-
-		_putchar(c);
-
-		my_var++;
-	}
+	printf("_putchar\n");
 	return (0);
 }
