@@ -2,7 +2,8 @@
 /**
  * print_alphabet_x10 - Entry point
  *
- * Description: This program writes all the lowercase alpabets
+ * Description: This program writes all the
+ * lowercase alpabets
  * using ony _putchar twice.
  *
  * Return: Always 0 on success
@@ -10,14 +11,13 @@
  */
 void print_alphabet_x10(void)
 {
-	char al;
-	int num;
+	int num, i;
 
 	for (num = 0; num < 10; num++)
 	{
-		for (al = 'a'; al <= 'z'; al++)
+		for (i = 97; i <= 122; i++)
 		{
-			_putchar(al);
+			_putchar(i);
 		}
 		_putchar('\n');
 	}
