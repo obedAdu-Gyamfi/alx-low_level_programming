@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -7,22 +7,23 @@
  */
 int main(void)
 {
-int num, n;
-for (num = '0'; num < '9' ; num++)
-{
-	for (n = num + 1; n <= '9'; n++)
+	int num, n;
+
+	for (num = '0'; num < '9' ; num++)
 	{
-		if (n != num)
+		for (n = num + 1; n <= '9'; n++)
 		{
-			putchar(num);
-			putchar(n);
-			if ((num == '8') || (num == '9'))
-				continue;
-		putchar(',');
-		putchar(' ');
+			if (n != num)
+			{
+				putchar(num);
+				putchar(n);
+				if ((num == '8') || (num == '9'))
+					continue;
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
