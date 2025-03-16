@@ -10,7 +10,7 @@
  */
 void puts_half(char *str)
 {
-	unsigned int i, n, len = 0, j;
+	unsigned int i, n, m, len = 0, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -19,9 +19,10 @@ void puts_half(char *str)
 
 	if (len % 2 != 0)
 	{
-		for (n = (len - 1) / 2; n < len - 1; n++)
+		n = (len - 1) / 2;
+		for (m = n + 1; m < len; m++)
 		{
-			_putchar(str[n]);
+			_putchar(str[m]);
 		}
 	}
 	else
